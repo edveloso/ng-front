@@ -1,0 +1,23 @@
+<nav class="nav navbar-expand-sm bg-primary navbar-dark">
+<ul class="navbar-nav">
+  <li class="nav-item">
+    <a routerLink="produtos" class="nav-link"
+         routerLinkActive="active"  >Lista de produtos</a>
+  </li>
+  <li class="nav-link"
+      routerLink="add" routerLinkActive="active">Novo Produto</li>  
+</ul>
+</nav>
+
+<div class="container">
+
+  <br/>
+  <h2 class="text-align: center">{{title}}</h2>
+
+  <div class="card">
+    <div class="card-body">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+</div>
